@@ -81,6 +81,5 @@ window.addEventListener("scroll", function() {
     headerNav.classList.toggle("current" ,window.scrollY < 590)
     aboutNav.classList.toggle("current" ,window.scrollY >= 590)
 })
-
-
-
+500<x<600
+500<x-600
