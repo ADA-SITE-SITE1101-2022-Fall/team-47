@@ -74,7 +74,13 @@ window.addEventListener("scroll", function(){
 )
 
 
-
+window.addEventListener("scroll", function() {
+    console.log(window.scrollY)
+    var headerNav = document.querySelector(".header-nav")
+    var aboutNav = document.querySelector(".about-nav")
+    headerNav.classList.toggle("current" ,window.scrollY < 590)
+    aboutNav.classList.toggle("current" ,window.scrollY >= 590)
+})
 
 
 
