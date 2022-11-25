@@ -129,7 +129,7 @@ small{
 }
 .header-section{
     background-image: url(../media/pexels-hasan-albari-1229861.jpg);
-    background-color: rgba(0, 0, 0, 0.812);
+    background-color: rgba(0, 0, 0, 0.584);
     background-attachment: fixed;
     background-blend-mode: darken;
     background-size: cover;
@@ -145,6 +145,7 @@ small{
 
 .header-section .header-image{
     width: 40%;
+    margin-right: 40px;
     margin-top: 40px;
 
 }
@@ -173,8 +174,8 @@ small{
     padding: 0;
     font-size: inherit;
     font-family: inherit;
-    top: 20%;
-    left: 60%;
+    top: 29%;
+    left: 70%;
    }
    
    a.learn-more .circle {
@@ -250,7 +251,8 @@ small{
 
 
 .header-section .header-text{
-    width: 70%;
+    width: 68%;
+    margin-left: 40px;
     padding-top: 20px;
     /* border: 1px solid red; */
     font-weight: 500;
@@ -327,13 +329,12 @@ i{
 }
 
 
-
-.a-member{
+.a-member-left{
     width: 100%;
     height: 90vh;
     position: relative;
 }
-.a-member .photo-about{
+.a-member-left .photo-about{
     position: absolute;
     width: 25%;
     height: 450px;
@@ -345,7 +346,7 @@ i{
 
 
 }
-.a-member .info-about{
+.a-member-left .info-about{
     z-index: -1;
     position: absolute;
     width: 100%;
@@ -355,7 +356,7 @@ i{
     top: 12%;
 
 }
-.a-member .info-about p{
+.a-member-left .info-about p{
     display: inline-block;
     width: 42%;
     margin-left: 50%;
@@ -366,13 +367,85 @@ i{
     line-height: 1.5;
     letter-spacing: 0.5px;
 }
-.a-member .info-about h2{
+.a-member-left .info-about h2{
     margin-left: 20.5%;
     font-size: 1.8rem;
     color: #fff;
 }
-.a-member .photo-about img{
+.a-member-left .photo-about img{
     width: 100%;
 
     border-radius: 5px;
+}
+
+
+
+
+
+.a-member-right{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.a-member-right .photo-about{
+    position: absolute;
+    width: 25%;
+    height: 450px;
+
+
+    box-shadow: 0 0 10px 0 rgb(42, 42, 42);
+    right: 15%;
+    top: 22%;
+
+
+}
+.a-member-right .info-about{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: #008080c4;
+    box-shadow: 0 0 10px 0 rgb(42, 42, 42);
+    top: 12%;
+
+}
+.a-member-right .info-about p{
+    display: inline-block;
+    width: 42%;
+    margin-left: 9%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    padding: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+.a-member-right .info-about h2{
+    margin-left: 65.2%;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.a-member-right .photo-about img{
+    width: 100%;
+
+    border-radius: 5px;
+}
+
+
+
+.home-about{
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    height: 70vh;
+    background: #222831;
+}
+
+.home-about p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    padding: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
