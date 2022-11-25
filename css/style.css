@@ -450,7 +450,7 @@ i{
 .home-about-pr p{
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: 20px;
     line-height: 1.5;
     letter-spacing: 0.5px;
@@ -460,8 +460,18 @@ i{
 .home-about-pr h2{
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     padding: 20px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+}
+
+.desc{
+    display: flex;
+}
+
+.desc img{
+    width: 50%;
+    border-radius: 10px;
+    padding-right: 20px;
 }
