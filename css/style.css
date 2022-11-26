@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 body{
@@ -449,10 +451,10 @@ i{
 
 .home-about-pr{
     margin: auto;
-    margin-top: 20px;
+    margin-top: 2   0px;
     border-radius: 10px;
     width: 90%;
-    height: 100vh;
+    height: 140vh;
     background: #222831;
     background: url(../media/about-background.jpg);
     background-position: center;
@@ -480,13 +482,17 @@ i{
     padding: 20px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+    margin-top: 20px;
 }
 
 .desc{
     display: flex;
+    padding-bottom: 40px;
 
 }
-
+.desc p{
+    line-height: 35px;
+}
 .desc img{
     width: 50%;
     border-radius: 10px;
@@ -495,16 +501,78 @@ i{
 
 
 
+.progress{
+    display: flex;
+    margin-top: 20px;
 
-.progress-list{
+
+}
+.progress img{
+    width: 40%;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.progress .progress-list{
     list-style: none;
     font-size: 1.4rem;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    margin-left: 20px;
-    padding: 15px;
+    margin-left: 100px;
+    padding: 10px;
 }
-.progress-list .progress-item a{
+.progress .progress-list .progress-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.progress .progress-list .progress-item a::before{
+    content: "";
+    position: absolute;
+    background-color: #a2ff00e2;
+    display: inline-block;
+    top: 100%;
+    left: 0;
+    width: 0em;
+    height: 2px;
+    font-size: 1.5rem;
+    transition: 0.3s ease-out;
+}
+.progress .progress-list .progress-item a:hover::before{
+    width: 96%;
+}
+
+.progress .progress-list .progress-item a{
     text-decoration: none;
     color: #92E006;
+}
+
+
+
+
+.hour-of-code{
+    width: 96%;
+    border-radius: 10px;
+    margin: auto;
+    height: 100vh;
+    background: #222831;
+}
+
+
+.go-to-top{
+    opacity: 0;
+    position:fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #78b30b;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.go-to-top i{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 14.5px;
+    margin-top: 12px;
 }

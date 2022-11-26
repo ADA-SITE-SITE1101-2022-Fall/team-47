@@ -75,11 +75,29 @@ window.addEventListener("scroll", function(){
 
 
 window.addEventListener("scroll", function() {
-    console.log(window.scrollY)
     var headerNav = document.querySelector(".header-nav")
     var aboutNav = document.querySelector(".about-nav")
-    headerNav.classList.toggle("current" ,window.scrollY < 590)
-    aboutNav.classList.toggle("current" ,window.scrollY >= 590)
+    var hocNav = document.querySelector(".hoc-nav")
+    var goTotop = document.querySelector(".go-to-top")
+    if (window.scrollY > 650) {
+        goTotop.style.opacity = "1";
+    }
+    else {
+        goTotop.style.opacity = "0";
+    }
+    if(window.scrollY < 590) {
+        headerNav.classList.add("current")
+        aboutNav.classList.remove("current")
+        hocNav.classList.remove("current")
+    }
+    if(window.scrollY > 590 && window.scrollY < 1300) {
+        headerNav.classList.remove("current")
+        aboutNav.classList.add("current")
+        hocNav.classList.remove("current")
+    }
+    if(window.scrollY > 1400) {
+        headerNav.classList.remove("current")
+        aboutNav.classList.remove("current")
+        hocNav.classList.add("current")
+    }
 })
-500<x<600
-500<x-600
