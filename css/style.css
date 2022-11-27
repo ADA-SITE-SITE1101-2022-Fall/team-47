@@ -282,11 +282,27 @@ small{
 }
 
 .header-section .header-text small a{
+    text-decoration: none;
     color: #a2ff00e2 !important;
     transition: 0.2s ease-in-out;
+    position: relative;
+}
+.header-section .header-text small a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #92E006;
+    left: 0;
+    bottom: 0px;
+    transition: 0.2s ease-out;
+
+}
+.header-section .header-text small a:hover::before{
+    width: 100%;
 }
 .header-section .header-text small a:hover{
-    color: #5a8b04 !important;
+    color: #92E006 !important;
 }
 
 
@@ -427,7 +443,7 @@ i{
     display: inline-block;
     width: 42%;
     margin-left: 9%;
-    margin-top: -80px;
+    margin-top: -50px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
