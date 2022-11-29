@@ -105,7 +105,7 @@ window.addEventListener("scroll", function() {
         aboutNav.classList.remove("current")
         hocNav.classList.add("current")
     }
-    else{
+    if(this.window.scrollY > 3200) {
         headerNav.classList.remove("current")
         aboutNav.classList.remove("current")
         hocNav.classList.remove("current")
