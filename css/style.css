@@ -569,7 +569,7 @@ i{
     width: 96%;
     border-radius: 10px;
     margin: auto;
-    height: 100vh;
+    height: 160vh;
     background: #222831;
 }
 
@@ -591,4 +591,32 @@ i{
     font-size: 1.5rem;
     margin-left: 14.5px;
     margin-top: 12px;
+}
+
+.video{
+    display: flex;
+}
+.video .hoc-text{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    line-height: 1.5;
+    width: 50%;
+    padding: 30px;
+    line-height: 30px;
+}
+
+.video video{
+    width: 48%;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.video img{
+    width: 45%;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
 }
