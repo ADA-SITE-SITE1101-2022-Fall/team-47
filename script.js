@@ -69,12 +69,17 @@
 
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 60);
+    var title = document.querySelector(".title");
+    var logo = document.querySelector(".logo");
+    header.classList.toggle("sticky", window.scrollY > 50);
+    title.classList.toggle("title-sticky", window.scrollY > 50);
+    logo.classList.toggle("d-none", window.scrollY > 50);
 }
 )
 
 
 window.addEventListener("scroll", function() {
+    console.log(window.scrollY);
     var headerNav = document.querySelector(".header-nav")
     var aboutNav = document.querySelector(".about-nav")
     var hocNav = document.querySelector(".hoc-nav")
@@ -95,9 +100,14 @@ window.addEventListener("scroll", function() {
         aboutNav.classList.add("current")
         hocNav.classList.remove("current")
     }
-    if(window.scrollY > 1400) {
+    if(window.scrollY > 1400 && window.scrollY < 3200) {
         headerNav.classList.remove("current")
         aboutNav.classList.remove("current")
         hocNav.classList.add("current")
+    }
+    else{
+        headerNav.classList.remove("current")
+        aboutNav.classList.remove("current")
+        hocNav.classList.remove("current")
     }
 })
